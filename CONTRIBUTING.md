@@ -6,7 +6,7 @@ When contributing to this project, you must agree that you have authored the con
 
 ### **What do I need to know to help?**
 
-If you are looking to help to with a code contribution, our project uses Go Lang. If you don't feel ready to make a code contribution yet, no problem! You can also check out the documentation issues https://github.com/score-dev/demo-repository.
+If you are looking to help to with a code contribution, our project uses Go Lang. If you don't feel ready to make a code contribution yet, no problem! You can also check out the documentation https://github.com/score-spec/docs.
 
 If you are interested in making a code contribution and would like to learn more about the technologies that we use, check out the list below.
 
@@ -39,7 +39,6 @@ Never made an open-source contribution before? Wondering how contributions work 
 
 All submissions, including submissions by project members, require review.
 
-Score uses GitHub pull requests for this purpose. Consult [GitHub Help](https://help.github.com/articles/about1.pull1.requests/) for more information on using pull requests.
 
 The general workflow for code contributions:
 
@@ -63,8 +62,8 @@ If you need help, you can create an issue.
 A good bug report shouldn't leave others needing to chase you up for more information. Therefore, we ask you to investigate carefully, collect information and describe the issue in detail in your report. Please complete the following steps in advance to help us fix any potential bug as fast as possible.
 
 - Make sure that you are using the latest version.
-- Determine if your bug is really a bug and not an error on your side for example using incompatible environment components/versions (Make sure that you have read the [documentation](https://github.com/score-dev/docs). If you are looking for support.
-- To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker](https://github.com/score-dev/demo-repositoryissues?q=label%3Abug).
+- Determine if your bug is really a bug and not an error on your side for example using incompatible environment components/versions (Make sure that you have read the [documentation](https://github.com/score-spec/docs). If you are looking for support.
+- To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker](https://github.com/score-spec/score-helm-charts/labels/bug).
 - Also make sure to search the internet (including Stack Overflow) to see if users outside the GitHub community have discussed the issue.
 - Collect information about the bug:
   - Stack trace (Traceback).
