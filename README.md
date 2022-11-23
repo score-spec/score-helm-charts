@@ -11,7 +11,7 @@ This repository contains a sample Helm chart which can be used with the value fi
 ## ![Get involved](docs/images/get-involved.svg) Get involved
 
 - Give the project a star!
-- Contact us via Email:
+- Contact us by email:
   - team@score.dev
   - abuse@score.dev
 - See our [documentation](https://docs.score.dev).
