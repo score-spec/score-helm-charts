@@ -2,12 +2,11 @@
 
 # ![Score](docs/images/logo.svg) Score Chart Repository
 
-This repository contains a sample workload repository that can be used with the values file created by score-helm
+This repository contains a sample Helm chart which can be used with the value files created by [score-helm](https://github.com/score-spec/score-helm) as demonstrated in the [get started with Score](https://score.dev/blog/get-started-with-score-docker-compose-to-helm) tutorial.
 
 ## ![Installation](docs/images/install.svg) Installation
 
 `helm repo add score-helm-charts https://score-spec.github.io/score-helm-charts`
-
 
 ## ![Get involved](docs/images/get-involved.svg) Get involved
 
@@ -19,7 +18,7 @@ This repository contains a sample workload repository that can be used with the 
 
 ## ![Contributing](docs/images/contributing.svg) Contributing
 
-<!-- - Write a [blog](score.dev/blog). -->
+- Write a [blog post](score.dev/blog).
 - Provide feedback on our [road map and releases board](https://github.com/orgs/score-spec/projects).
 - Contribute.
 
@@ -35,10 +34,18 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 Read [CONTRIBUTING](CONTRIBUTING.md) for more information.
 
-## ![License](docs/images/license.svg) License
+### Documentation
+
+You can find our documentation at [docs.score.dev](https://docs.score.dev/docs).
+
+### Roadmap
+
+See [Roadmap](https://github.com/score-spec/spec/blob/main/roadmap.md). You can [submit an idea](https://github.com/score-spec/spec/blob/main/roadmap.md#get-involved) anytime.
+
+### License
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## ![Code of conduct](docs/images/code-of-conduct.svg) Code of conduct
+### Code of conduct
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
