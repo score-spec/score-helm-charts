@@ -18,7 +18,7 @@ This repository contains a sample Helm chart which can be used with the value fi
 
 ## ![Contributing](docs/images/contributing.svg) Contributing
 
-- Write a [blog post](score.dev/blog).
+- Write a [blog post](https://score.dev/blog).
 - Provide feedback on our [road map and releases board](https://github.com/orgs/score-spec/projects).
 - Contribute.
 
