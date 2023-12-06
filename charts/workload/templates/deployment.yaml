@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "workload.name" . }}
+  annotations:
+    {{- toYaml .Values.workload.annotations | nindent 4 }}
   labels:
     {{- include "workload.labels" . | nindent 4 }}
 spec:
