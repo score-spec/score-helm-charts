@@ -13,8 +13,11 @@ spec:
       {{- include "workload.selectorLabels" . | nindent 6 }}
   template:
     metadata:
+      annotations:
+        {{- toYaml .Values.workload.containers.annotations | nindent 8 }}
       labels:
         {{- include "workload.selectorLabels" . | nindent 8 }}
+        {{- toYaml .Values.workload.containers.labels | nindent 8 }}
     spec:
       containers:
         {{- range $name, $container := .Values.containers }}
