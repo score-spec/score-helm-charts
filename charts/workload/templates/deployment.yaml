@@ -5,7 +5,8 @@ metadata:
   annotations:
     {{- toYaml .Values.workload.annotations | nindent 4 }}
   labels:
-    {{- include "workload.labels" . | nindent 4 }}
+    {{- include "workload.commonLabels" . | nindent 4 }}
+    {{- toYaml .Values.workload.labels | nindent 4 }}
 spec:
   selector:
     matchLabels:
