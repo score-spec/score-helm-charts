@@ -26,7 +26,7 @@ Create chart name and version as used by the chart label.
 {{/*
 Common labels
 */}}
-{{- define "workload.labels" -}}
+{{- define "workload.commonLabels" -}}
 helm.sh/chart: {{ include "workload.chart" . }}
 {{ include "workload.selectorLabels" . }}
 {{- if .Chart.AppVersion }}

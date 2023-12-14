@@ -2,16 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "workload.name" . }}
+  annotations:
+    {{- toYaml .Values.workload.annotations | nindent 4 }}
   labels:
-    {{- include "workload.labels" . | nindent 4 }}
+    {{- include "workload.commonLabels" . | nindent 4 }}
+    {{- toYaml .Values.workload.labels | nindent 4 }}
 spec:
   selector:
     matchLabels:
       {{- include "workload.selectorLabels" . | nindent 6 }}
   template:
     metadata:
+      annotations:
+        {{- toYaml .Values.workload.containers.annotations | nindent 8 }}
       labels:
         {{- include "workload.selectorLabels" . | nindent 8 }}
+        {{- toYaml .Values.workload.containers.labels | nindent 8 }}
     spec:
       containers:
         {{- range $name, $container := .Values.containers }}
