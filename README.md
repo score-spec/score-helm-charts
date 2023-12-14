@@ -19,7 +19,7 @@ This repository contains a sample Helm chart which can be used with the value fi
 ## ![Contributing](docs/images/contributing.svg) Contributing
 
 - Write a [blog post](https://score.dev/blog).
-- Provide feedback on our [road map and releases board](https://github.com/orgs/score-spec/projects).
+- Provide feedback on our [roadmap](https://github.com/orgs/score-spec/projects).
 - Contribute.
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
@@ -48,4 +48,4 @@ See [Roadmap](https://github.com/score-spec/spec/blob/main/roadmap.md). You can 
 
 ### Code of conduct
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
