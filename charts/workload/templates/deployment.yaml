@@ -17,10 +17,10 @@ spec:
       {{- include "workload.selectorLabels" . | nindent 6 }}
   template:
     metadata:
+      {{- if and .Values.workload .Values.workload.containers .Values.workload.containers.annotations }}
       annotations:
-        {{- if and .Values.workload .Values.workload.containers .Values.workload.containers.annotations }}
         {{- toYaml .Values.workload.containers.annotations | nindent 8 }}
-        {{- end }}
+      {{- end }}
       labels:
         {{- include "workload.selectorLabels" . | nindent 8 }}
         {{- if and .Values.workload .Values.workload.containers .Values.workload.containers.labels }}
