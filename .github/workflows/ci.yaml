@@ -1,0 +1,15 @@
+name: ci
+on:
+  push:
+    branches:
+jobs:
+  ci:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: helm lint
+        run: |
+          helm lint charts/workload --strict
+      - name: helm template
+        run: |
+          helm template charts/workload
