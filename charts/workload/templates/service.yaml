@@ -5,12 +5,14 @@ metadata:
   name: {{ include "workload.name" . }}
   {{- if .Values.service.annotations }}
   annotations:
-    {{- toYaml .Values.service.annotations | nindent 4 }}
+    {{- range $key, $val := .Values.service.annotations }}
+    {{ $key }}: {{ $val | quote }}
+    {{- end }}
   {{- end }}
   labels:
     {{- include "workload.commonLabels" . | nindent 4 }}
-    {{- if .Values.service.labels }}
-    {{- toYaml .Values.service.labels | nindent 4 }}
+    {{- range $key, $val := .Values.service.labels }}
+    {{ $key }}: {{ $val | quote }}
     {{- end }}
 spec:
   type: {{ .Values.service.type }}
