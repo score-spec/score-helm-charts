@@ -4,12 +4,14 @@ metadata:
   name: {{ include "workload.name" . }}
   {{- if and .Values.workload .Values.workload.annotations }}
   annotations:
-    {{- toYaml .Values.workload.annotations | nindent 4 }}
+    {{- range $key, $val := .Values.workload.annotations }}
+    {{ $key }}: {{ $val | quote }}
+    {{- end }}
   {{- end }}
   labels:
     {{- include "workload.commonLabels" . | nindent 4 }}
-    {{- if and .Values.workload .Values.workload.labels }}
-    {{- toYaml .Values.workload.labels | nindent 4 }}
+    {{- range $key, $val := .Values.workload.labels }}
+    {{ $key }}: {{ $val | quote }}
     {{- end }}
 spec:
   selector:
@@ -19,12 +21,14 @@ spec:
     metadata:
       {{- if and .Values.workload .Values.workload.containers .Values.workload.containers.annotations }}
       annotations:
-        {{- toYaml .Values.workload.containers.annotations | nindent 8 }}
+        {{- range $key, $val := .Values.workload.containers.annotations }}
+        {{ $key }}: {{ $val | quote }}
+        {{- end }}
       {{- end }}
       labels:
         {{- include "workload.selectorLabels" . | nindent 8 }}
-        {{- if and .Values.workload .Values.workload.containers .Values.workload.containers.labels }}
-        {{- toYaml .Values.workload.containers.labels | nindent 8 }}
+        {{- range $key, $val := .Values.workload.containers.labels }}
+        {{ $key }}: {{ $val | quote }}
         {{- end }}
     spec:
       containers:
