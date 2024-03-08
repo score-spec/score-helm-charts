@@ -2,14 +2,14 @@ apiVersion: v1
 entries:
   workload:
   - apiVersion: v2
-    appVersion: 0.4.0
-    created: "2023-12-14T18:06:03.553112+01:00"
+    appVersion: 0.5.0
+    created: "2024-03-08T18:06:03.553112+01:00"
     description: A Helm chart to provision standard workloads using score-helm. This
       chart can be forked and adapted for other use cases.
-    digest: 0ccd6be1b499ea5f6c75997d464b884279f75d2c0594badbd385501e018215c8
+    digest: e4720093a3c1381245b53a5a51b417963b3c4472d3f47fc301930a4f3b17666a
     name: workload
     type: application
     urls:
-    - https://score-spec.github.io/score-helm-charts/workload-0.4.0.tgz
-    version: 0.4.0
-generated: "2023-12-14T18:06:03.553112+01:00"
+    - https://score-spec.github.io/score-helm-charts/workload-0.5.0.tgz
+    version: 0.5.0
+generated: "2024-03-08T18:06:03.553112+01:00"
