@@ -11,8 +11,10 @@ metadata:
   {{- end }}
   labels:
     {{- include "workload.commonLabels" . | nindent 4 }}
+    {{- if .Values.service.labels }}
     {{- range $key, $val := .Values.service.labels }}
     {{ $key }}: {{ $val | quote }}
+    {{- end }}
     {{- end }}
 spec:
   type: {{ .Values.service.type }}

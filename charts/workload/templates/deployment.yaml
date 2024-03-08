@@ -10,8 +10,10 @@ metadata:
   {{- end }}
   labels:
     {{- include "workload.commonLabels" . | nindent 4 }}
+    {{- if and .Values.workload .Values.workload.labels }}
     {{- range $key, $val := .Values.workload.labels }}
     {{ $key }}: {{ $val | quote }}
+    {{- end }}
     {{- end }}
 spec:
   selector:
@@ -27,8 +29,10 @@ spec:
       {{- end }}
       labels:
         {{- include "workload.selectorLabels" . | nindent 8 }}
+        {{- if and .Values.workload .Values.workload.containers .Values.workload.containers.labels }}
         {{- range $key, $val := .Values.workload.containers.labels }}
         {{ $key }}: {{ $val | quote }}
+        {{- end }}
         {{- end }}
     spec:
       containers:
