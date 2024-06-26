@@ -3,7 +3,7 @@
 
 :warning: Deprecation Notice :warning:
 
-We have deprecated the score-helm CLI implementation associated with this repository. To get started with Score, we recommend using one of our reference implementations [score-compose](https://github.com/score-spec/score-compose) or [score-k8s](https://github.com/score-spec/score-k8s). If you're interested in developing a score-helm reference implementation, we'd love to support you! Please reach out to us for assistance and collaboration.
+We have deprecated the [score-helm](https://github.com/score-spec/score-helm) CLI implementation associated with this repository. To get started with Score, we recommend using one of our reference implementations [score-compose](https://github.com/score-spec/score-compose) or [score-k8s](https://github.com/score-spec/score-k8s). If you're interested in developing a score-helm reference implementation, we'd love to support you! Please reach out to us for assistance and collaboration.
 
 ---
 
